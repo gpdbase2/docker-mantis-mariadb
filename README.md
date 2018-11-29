@@ -53,19 +53,20 @@ Após preencher, clicar em **Login/Continue** e aguardar o processamento (demora
 O primeiro acesso deverá ser feito utilizando as credenciais *administrator/root*. Redefinir a senha para o valor *administrator*.
 
 **1.4 Configuração inicial MariaDB**
-Abrir o software VirtualBox
-3. Encontrar a imagem referente ao docker
-4. Acessar "Configurações"
-5. Acessar "Redes"
-6. Acessar "Avançado"
-7. Acessar "Redirecionamento de Portas"
-8. A configuração para funcionar no  docker toolbox deverá estar dessa maneira:
+
+1. Abrir o software VirtualBox
+2. Encontrar a imagem referente ao docker
+3. Acessar "Configurações"
+4. Acessar "Redes"
+5. Acessar "Avançado"
+6. Acessar "Redirecionamento de Portas"
+7. A configuração para funcionar no  docker toolbox deverá estar dessa maneira:
 ![enter image description here](https://i.imgur.com/09lJxzV.png)
-9.  Incluir linha conforme nome "docker"
-10.  Protocolo: TCP
-11.  Endereço de Hospedeiro: 127.0.0.1
-12.  Porta de Hospedeiro: 3306
-13.  IP Convidado preenchido com o valor recebido do docker  (docker-machine ip default): 192.168.99.100
-14.  Porta do convidado: 3306
+8.  Incluir linha conforme nome "docker"
+9.  Protocolo: TCP
+10.  Endereço de Hospedeiro: 127.0.0.1
+11.  Porta de Hospedeiro: 3306
+12.  IP Convidado preenchido com o valor recebido do docker  (docker-machine ip default): 192.168.99.100
+13.  Porta do convidado: 3306
 
 Para acessar o banco de dados, utilize algum SGBD MySQL (exemplo: Heidi SQL) com as credenciais listadas acima.
