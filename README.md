@@ -1,6 +1,8 @@
 # docker-mantis-mariadb
 
 **Criar o arquivo docker-compose.yml no diretório C:\mantis:** 
+
+```
 db: 
   environment: 
     - MYSQL_ROOT_PASSWORD=root
@@ -19,6 +21,7 @@ mantisbt:
   ports: 
     - "8989:80"
   restart: always
+```
 
 # 1. Preparação do ambiente Mantis
 
