@@ -38,8 +38,9 @@ O ambiente Mantis deverá estar disponível em: http://192.168.99.100:8989
 **1.3 Configuração inicial Mantis**
 
 Para o primeiro acesso ao Mantis, será necessário configurar o banco de dados conforme tabela abaixo:
+
 | Variável | Valor |
-|--|--|
+|------|--------|
 | Type of Database | MySQL Improved |
 | Hostname (for Database Server) | mantis_db_1 |
 | Username (for Database) | mantisbt |
