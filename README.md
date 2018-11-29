@@ -1,5 +1,25 @@
 # docker-mantis-mariadb
 
+**Criar o arquivo docker-compose.yml no diretório C:\mantis:** 
+db: 
+  environment: 
+    - MYSQL_ROOT_PASSWORD=root
+    - MYSQL_DATABASE=bugtracker
+    - MYSQL_USER=mantisbt
+    - MYSQL_PASSWORD=mantisbt
+  image: mariadb
+  ports: 
+    - "3306:3306"
+  restart: always
+
+mantisbt: 
+  image: "vimagick/mantisbt:latest"
+  links: 
+    - db
+  ports: 
+    - "8989:80"
+  restart: always
+
 # 1. Preparação do ambiente Mantis
 
 Será necessário baixar os seguintes softwares para iniciar o projeto:
