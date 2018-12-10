@@ -15,4 +15,4 @@ mantisbt:
     - db
   ports: 
     - "8989:80"
-  restart: alwaysdock
+  restart: always
